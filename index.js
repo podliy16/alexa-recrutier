@@ -1,5 +1,5 @@
 'use strict';
-
+//tmp
 // --------------- Helpers that build all of the responses -----------------------
 
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
