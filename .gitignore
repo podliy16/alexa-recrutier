@@ -1,5 +1,8 @@
 todo
 .idea/
+create_zip.sh
+recruiter.zip
+question_list.json
 
 # Logs
 logs
@@ -38,4 +41,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
->>>>>>> 474e39c411e9dfb264f66dfd2f578203a8d1a8f9
