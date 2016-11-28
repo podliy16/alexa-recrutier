@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Percent of correct answered questions in middle level to determinate candidate position.
  */
@@ -55,11 +56,6 @@ function buildResponse(speechOutput, repromptText, shouldEndSession, card) {
         outputSpeech: {
             type: 'SSML',
             ssml: "<speak>" + speechOutput + "</speak>"
-        },
-        card: {
-            type: "Simple",
-            title: "Detailed statistic",
-            content: "tmp"
         },
         shouldEndSession
     };
