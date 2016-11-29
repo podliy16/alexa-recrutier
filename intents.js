@@ -13,10 +13,13 @@ const QUESTIONS_COUNT = 5;
 const QUESTIONS_NEXT_LVL = 0.1;
 
 const TEXTS = {
-    WELCOME: "Welcome, I'm Alexa recruiter. You should choose topic. Available topics are: Frontend Javascript, Node js",
+    WELCOME: "Welcome, I'm your personal recruiter. You should choose topic. Available topics are: Frontend Javascript, Node js",
     WRONG_TOPIC: "I don't know such topic, please choose Frontend Javascript or Node js",
     CANT_CHANGE_TOPIC: "You can't change topic during interview. You can finish current talk by saying CANCEL",
-    EXIT: "You're leaving Alexa Recruiter skill"
+    EXIT: "You're leaving Personal Recruiter.",
+    HELP: "Personal recruiter can help you pass an interview. Recruiter contain a set of questions that you must answer. On the end of interview recruiter determine your level of knowledge. For exiting recruiter you should say stop. ",
+    HELP_TOPIC: "For selecting topic of questions you should say <break time=\"500ms\"/> choose topic name. For example: choose node js. Available topics are: Frontend Javascript, Node js",
+    HELP_QUESTION: "For answering the question you should say <break time=\"100ms\"/> answer is <break time=\"500ms\"/> then your answer. For repeating the question you should say repeat.",
 };
 
 const LEVELS = {
@@ -147,7 +150,7 @@ const intents = {
         if (sessionAttributes['countQuestions'] == QUESTIONS_COUNT) {
             let position = helpers.calculatePosition(sessionAttributes['questionsCount'], level);
             let countCorrect = questionsCount[0].correctCount + questionsCount[1].correctCount;
-            speechOutput = `Your level is ${position} developer. You answered correctly ${countCorrect} out of ${QUESTIONS_COUNT} questions. For detailed statistic check out your alexa app.`;
+            speechOutput = `Your level is ${position} developer. You answered correctly ${countCorrect} out of ${QUESTIONS_COUNT} questions. For detailed statistic check out your application.`;
             card = helpers.buildCardText(detailedStatistics);
             finishSession = true;
         } else {
@@ -181,6 +184,12 @@ const intents = {
             speechletResponse: helpers.buildResponse(TEXTS.EXIT, null, true, null)
         }
     },
+    'AMAZON.StopIntent': function(intent, sessionAttributes) {
+        return {
+            sessionAttributes,
+            speechletResponse: helpers.buildResponse(TEXTS.EXIT, null, true, null)
+        }
+    },
     'AMAZON.RepeatIntent': function(intent, sessionAttributes) {
         const lastQuestion = sessionAttributes['lastQuestion'];
         const level = sessionAttributes['level'];
@@ -188,6 +197,23 @@ const intents = {
         return {
             sessionAttributes,
             speechletResponse: helpers.buildResponse(questionText, null, false, null)
+        }
+    },
+    'AMAZON.HelpIntent': function(intent, sessionAttributes) {
+        const lastQuestion = sessionAttributes['lastQuestion'];
+        let help = TEXTS.HELP;
+        if (lastQuestion === undefined) {
+            help = help + TEXTS.HELP_TOPIC;
+            return {
+                sessionAttributes,
+                speechletResponse: helpers.buildResponse(help, null, false, null)
+            }
+        } else {
+            help = help + TEXTS.HELP_QUESTION;
+            return {
+                sessionAttributes,
+                speechletResponse: helpers.buildResponse(help, null, false, null)
+            }
         }
     }
 };
