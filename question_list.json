@@ -1,0 +1,380 @@
+[
+  {
+    "database": [
+      {
+        "id": 1,
+        "question": "Which language is designed for communicating with databases?",
+        "answer": [
+          "sql"
+        ]
+      },
+      {
+        "id": 2,
+        "question": "What is a collection of records of a specific type?",
+        "answer": [
+          "table"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which database mechanism allow to run multiple queries run as one query and takes database from one consistent state to another?",
+        "answer": [
+          "transaction",
+          "database transaction"
+        ]
+      },
+      {
+        "id": 5,
+        "question": "How named the process of organizing the columns and tables of a relational database to reduce data redundancy and improve data integrity?",
+        "answer": [
+          "database normalization",
+          "normalization"
+        ]
+      },
+      {
+        "id": 6,
+        "question": "How many count of different type of normalization do you know?",
+        "answer": [
+          "3",
+          "three"
+        ]
+      },
+      {
+        "id": 7,
+        "question": "How named property of column whose value uniquely identify every row in a table?",
+        "answer": [
+          "primary key",
+          "primary",
+          "unique key",
+          "unique"
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Which SQL statement is used to add rows to a table?",
+        "answer": [
+          "insert",
+          "insert into"
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Which SQL statement is used to update data in a row or set of rows specified in the filter condition?",
+        "answer": [
+          "update"
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Which SQL statement is used to remove a row or set of rows specified in the filter condition?",
+        "answer": [
+          "remove"
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Which keyword is used to fetch data from related tables?",
+        "answer": [
+          "join"
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Can you use group functions for selecting more than one column without group statement?",
+        "answer": [
+          "no"
+        ]
+      }
+    ],
+    "HTML CSS": [
+      {
+        "id": 100,
+        "question": "Which attribute allows you to define equal styles for elements?",
+        "answer": [
+          "class"
+        ]
+      },
+      {
+        "id": 101,
+        "question": "Is there a difference between the div tag and span?",
+        "answer": [
+          "yes"
+        ]
+      }
+    ],
+    "front-end JavaScript": [
+      {
+        "id": 200,
+        "question": "Is there a JS function to find all the elements of a given class?",
+        "answer": [
+          "yes"
+        ]
+      },
+      {
+        "id": 201,
+        "question": "Is there a difference how add an event listener via addEventListener method or onEvent attribute?",
+        "answer": [
+          "yes"
+        ]
+      }
+    ],
+    "javascript": [
+      {
+        "id": 300,
+        "question": "What is scope of variable defined with var?",
+        "answer": [
+          "function"
+        ]
+      },
+      {
+        "id": 301,
+        "question": "What is scope of variable defined with let in EcmaScript 6?",
+        "answer": [
+          "block"
+        ]
+      },
+      {
+        "id": 302,
+        "question": "How named a function inside function which have access to context of first function?",
+        "answer": [
+          "closure"
+        ]
+      }
+    ],
+    "node js": [
+      {
+        "id": 400,
+        "question": "Is node a single threaded application?",
+        "answer": [
+          "yes"
+        ]
+      },
+      {
+        "id": 401,
+        "question": "How named a function which called at the completion of a given task?",
+        "answer": [
+          "callback"
+        ]
+      },
+      {
+        "id": 402,
+        "question": "How named a function without a name?",
+        "answer": [
+          "anonymous function",
+          "anonymous"
+        ]
+      }
+    ],
+    "algorithms": [
+      {
+        "id":  500,
+        "question": "Which data structure represent Last In First Out principe?",
+        "answer": [
+          "stack"
+        ]
+      },
+      {
+        "id": 501,
+        "question": "Which data structure represent First In First Out principe?",
+        "answer": [
+          "queue"
+        ]
+      },
+      {
+        "id": 502,
+        "question": "Which data structure is used for mapping values to keys of arbitrary type?",
+        "answer": [
+          "hash table",
+          "hash"
+        ]
+      }
+    ]
+  },
+  {
+    "database": [
+      {
+        "id": 1000,
+        "question": "When all the steps in a transaction get completed, it will get reflected in DB or if any step fails, all the transactions are rolled back. How this property named in ACID?",
+        "answer": [
+          "atomicity"
+        ]
+      },
+      {
+        "id": 1001,
+        "question": "The database will move from one consistent state to another, if the transaction succeeds and remain in the original state, if the transaction fails. How this property named in ACID?",
+        "answer": [
+          "consistency"
+        ]
+      },
+      {
+        "id": 1002,
+        "question": "Every transaction should operate as if it is the only transaction in the system. How this property named in ACID?",
+        "answer": [
+          "isolation"
+        ]
+      },
+      {
+        "id": 1003,
+        "question": "Once a transaction has completed successfully, the updated rows/records must be available for all other transactions on a permanent basis.. How this property named in ACID?",
+        "answer": [
+          "durability"
+        ]
+      },
+      {
+        "id": 1004,
+        "question": "Which mechanism tell transaction, if the data item in query is currently being used by other transaction?",
+        "answer": [
+          "lock",
+          "database lock"
+        ]
+      },
+      {
+        "id": 1005,
+        "question": "Which types of locks do you know?",
+        "answer": [
+          "shared lock",
+          "exclusive lock"
+        ]
+      },
+      {
+        "id": 1006,
+        "question": [
+          "How named the column which defined in a first table, but it refers to the primary key in the second table?"
+        ],
+        "answer": [
+          "foreign key",
+          "foreign"
+        ]
+      },
+      {
+        "id": 1007,
+        "question": "How named database searchable object, which defined by a SELECT statement?",
+        "answer": [
+          "view"
+        ]
+      },
+      {
+        "id": 1008,
+        "question": "What is a function which contain a collection of SQL queries?",
+        "answer": [
+          "stored procedure"
+        ]
+      },
+      {
+        "id": 1009,
+        "question": "How named set of commands that get executed when an event occurs on a table?",
+        "answer": [
+          "trigger"
+        ]
+      },
+      {
+        "id": 1100,
+        "question": "WHERE and HAVING are doing the same?",
+        "answer": [
+          "no"
+        ]
+      },
+      {
+        "id": 1110,
+        "question": "What are  the various multiple row comparison operators in SQL?",
+        "answer": [
+          "in",
+          "any",
+          "all"
+        ],
+        "type": 1
+      }
+    ],
+    "HTML CSS": [
+      {
+        "id": 1100,
+        "question": "What works on the principle of painted and forget?",
+        "answer": [
+          "canvas"
+        ]
+      },
+      {
+        "id": 1101,
+        "question": "What works on the principle of painted and remembered?",
+        "answer": [
+          "svg"
+        ]
+      }
+    ],
+    "front-end JavaScript": [
+      {
+        "id": 1200,
+        "question": "What kind of data storage in browser do you know?",
+        "answer": [
+          "local storage",
+          "cookies",
+          "session storage"
+        ],
+        "type": 1
+      },
+      {
+        "id": 1201,
+        "question": "What HTTP data transfer method transfers the data to the server using a URL?",
+        "answer": [
+          "get"
+        ]
+      }
+    ],
+    "javascript": [
+      {
+        "id": 1301,
+        "question": "Whether the arguments is array?",
+        "answer": [
+          "no"
+        ]
+      },
+      {
+        "id": 1302,
+        "question": "Is apply and bind doing the same?",
+        "answer": [
+          "no"
+        ]
+      }
+    ],
+    "node js": [
+      {
+        "id": 1400,
+        "question": "For what is reserved first argument of callback?",
+        "answer": [
+          "for error",
+          "error"
+        ]
+      },
+      {
+        "id": 1401,
+        "question": "What is used to process and handle external events and to convert them into callback invocations?",
+        "answer": [
+          "event loop"
+        ]
+      }
+    ],
+    "algorithms": [
+      {
+        "id": 1500,
+        "question": "Is there a way to find middle element of linked list in one pass?",
+        "answer": [
+          "yes"
+        ]
+      },
+      {
+        "id": 1501,
+        "question": "Is Red-Black Tree and B-Tree doing the same?",
+        "answer": [
+          "no"
+        ]
+      },
+      {
+        "id": 1502,
+        "question": "It is possible to use binary search for linked lists?",
+        "answer": [
+          "no"
+        ]
+      }
+    ]
+  }
+]
